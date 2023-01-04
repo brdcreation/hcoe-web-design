@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Section */
+header{
+    position: relative;
+    padding: 30px 0;
+    background: #fff;
+    box-shadow: 0 1px 10px #666;
+    z-index: 1;
+}
+
+nav{
+    margin-top: 15px;
+}
+
+nav ul li{
+    display: inline-block;
+}
+
+nav ul li a{
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 500;
+    margin: 0 5px;
+    background: #fff;
+    padding: 10px 15px;
+    border-radius: 30px;
+    color: #000;
+}
+
+/* nav ul li:first-child a{
+    background-color: green;
+}
+
+nav ul li:nth-child(2) a{
+    background-color: pink;
+} */
+
+nav ul li:last-child a{
+    background: #e74c3c;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+/* Banner Section */
+.banner{
+    padding: 50px 0;
+    background: #fbe9e9;
+}
+
+.banner-thumbnail img{
+    width: 100%;
+}
+
+.banner-content{
+    padding-top: 100px;
+}
+
+.banner-content h4{
+    color: red;
+}
+
+.banner-content h1{
+    font-size: 60px;
+    color: #000;
+    font-weight: 700;
+}
+
+.banner-content h1 span{
+    display: block;
+}
+
+.banner-content h1 span:last-child{
+    color: red;
+}
+
+.banner-content p{
+    margin-top: 30px;
+    font-size: 18px;
+    color: #000;
+    line-height: 36px;
+}
+
+.banner-content a{
+    display: inline-block;
+    padding: 15px 30px;
+    background: red;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50px;
+}
+
+/* About Me Section */
+.about-me{
+    padding: 80px 0;
+    background: #fff;
+}
+
+.about-me-profile{
+    position: relative;
+    padding-right: 80px;
+}
+
+.profile-image img{
+    width: 100%;
+    border-radius: 50px;
+    box-shadow: 0 0 10px #000;
+}
+
+.circle-box{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 200px;
+    height: 200px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: red dashed 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* "flex-direction : column" : parent div vitra 2 ta child element chha vane dubailai tala mathi garera rakhdinxa */
+}
+
+.circle-box span:first-child{
+    color: red;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.circle-box span:last-child{
+    color: #000;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.about-me-content h4{
+    color: red;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.about-me-content h2{
+    color: #000;
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.about-me-content h2 span{
+    display: block;
+}
+
+.about-me-content p{
+    color: #000;
+    font-size: 18px;
+    line-height: 36px;
+    margin-top: 30px;
+}
+
+/* Achivement Section */
+.achivement{
+    position: relative;
+    padding: 50px 0;
+    background: url('../images/globle.jpg') no-repeat fixed center center;
+    background-size: cover;
+}
+
+.achivement::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #5414ac;
+    opacity: 0.8;
+    /* transition: all linear 0.5s; */
+}
+/* .achivement:hover::before{
+    width: 100%;
+} */
+
+.achivement-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.achivement-content span:first-child{
+    color: #fff;
+    font-size: 50px;
+    font-weight: 700;
+    margin-right: 15px;
+}
+
+.achivement-content span:last-child{
+    color: #fff;
+    font-size: 18px;
+}
+
+.achivement-content span:last-child span{
+    display: block;
+    font-weight: 400;
+}
+
+/* Portfolio Section */
+.portfolio{
+    padding: 80px 0;
+    background: #fff;
+}
+
+.portfolio-title{
+    text-align: center;
+}
+
+.portfolio-title h4{
+    color: red;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.portfolio-title h2{
+    color: #000;
+    font-weight: 700;
+    font-size: 48px;
+}
+
+.slider-image{
+    position: relative;
+}
+
+.slider-image::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #000;
+    transition: all linear 0.3s;
+    opacity: 0.5;
+}
+
+.slider-image:hover::before{
+    width: 100%;
+}
+
+.slider-content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+}
+
+.slider-content h4{
+    font-size: 40px;
+}
